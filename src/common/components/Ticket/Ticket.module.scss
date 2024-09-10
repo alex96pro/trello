@@ -1,0 +1,45 @@
+@import '../../../styles/variables.scss';
+
+.ticket {
+  padding: 8px;
+  margin: 12px 0;
+  border-radius: $borderRadius;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.title {
+  margin: 0 0 16px 0;
+  font-weight: $fontWeightSemiBold;
+}
+
+.description {
+  display: block;
+  @include line-clamp(3);
+}
+
+.footer {
+  @include flex-align(row, space-between, center, wrap);
+}
+
+.ticketNumber {
+  color: $darkGray;
+}
+
+.avatarImage {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.todoTicket {
+  border-left: 4px solid $gray;
+}
+
+.inProgressTicket {
+  border-left: 4px solid $orange;
+}
+
+.doneTicket {
+  border-left: 4px solid $green;
+}

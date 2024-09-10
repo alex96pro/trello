@@ -1,0 +1,17 @@
+@import './variables.scss';
+
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  -webkit-text-size-adjust: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}

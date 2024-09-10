@@ -6,9 +6,6 @@
       "dom.iterable",
       "esnext"
     ],
-    "paths": {
-      "trello-ui": ["../trello-ui/src"]
-    },
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,

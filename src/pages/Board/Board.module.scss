@@ -1,0 +1,101 @@
+@import '.././../styles/variables.scss';
+
+.board {
+  background-color: $white;
+  padding: 16px;
+  min-height: 100vh;
+  max-width: $appMaxWidth;
+  margin: auto;
+  border-left: 1px solid $gray;
+  border-right: 1px solid $gray;
+
+  @media (min-width: $screen-md) {
+    padding: 32px;
+  }
+}
+
+.title {
+  margin: 0;
+  font-size: 24px;
+
+  @media (min-width: $screen-md) {
+    font-size: 32px;
+  }
+}
+
+.header {
+  @include flex-align(row, space-between, center, wrap);
+  padding-bottom: 16px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid $lightGray;
+}
+
+.titleAndLogo {
+  @include flex-align(row, flex-start, center, wrap);
+  gap: 8px;
+}
+
+.trelloLogo {
+  width: 36px;
+  height: 36px;
+}
+
+.columns {
+  @include flex-align(row, space-between, start, wrap);
+  gap: 16px;
+  margin-top: 8px;
+
+  @media (min-width: $screen-md) {
+    flex-wrap: nowrap;
+  }
+}
+
+.column {
+  background-color: $lightGray;
+  padding: 0 16px;
+  border-radius: $borderRadius;
+  height: max-content;
+  overflow: auto;
+  width: 100%;
+
+  @media (min-width: $screen-md) {
+    width: 100%;
+    height: calc(100vh - 190px);
+  }
+}
+
+.columnHeader {
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: $lightGray;
+  margin: 0 -16px;
+  padding: 16px;
+  border-bottom: 1px solid $white;
+  text-transform: uppercase;
+}
+
+.ticketsCount {
+  color: $darkGray;
+  font-weight: $fontWeightRegular;
+  font-size: 14px;
+  margin-left: 4px;
+  position: relative;
+  bottom: 1px;
+}
+
+.noTicketsLabel {
+  text-align: center;
+  font-size: 14px;
+  color: $darkGray;
+  margin-top: 16px;
+}
+
+.tag {
+  display: inline-block;
+  margin: 0 8px 8px 0;
+  background-color: $lightGray;
+  padding: 6px 12px;
+  font-size: 14px;
+  border-radius: $borderRadius;
+}

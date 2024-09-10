@@ -1,0 +1,47 @@
+// Font weights
+
+$fontWeightRegular: 500;
+$fontWeightSemiBold: 600;
+$fontWeightBold: 700;
+
+// Colors
+
+$primaryColor: #0098f0;
+$white: #fff;
+$darkGray: gray;
+$gray: rgb(207, 207, 207);
+$lightGray: rgb(245, 245, 245);
+$lightBlue: rgb(222, 244, 255);
+$red: rgb(255, 79, 79);
+$green: rgb(38, 255, 92);
+$orange: rgb(255, 189, 57);
+
+// breakpoints
+$screen-xxl: 1600px;
+$screen-xl: 1200px;
+$screen-l: 1024px;
+$screen-lg: 992px;
+$screen-md: 768px;
+$screen-sm: 576px;
+$screen-xs: 480px;
+
+// Common
+$appMaxWidth: 2000px;
+$borderRadius: 6px;
+
+// Mixins
+
+@mixin flex-align($direction: row, $justify: flex-start, $align: stretch, $wrap: nowrap) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+  flex-wrap: $wrap;
+}
+
+@mixin line-clamp($lines: 2) {
+  display: -webkit-box;
+  -webkit-line-clamp: $lines;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

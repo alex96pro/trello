@@ -1,0 +1,40 @@
+@import '../../../styles/variables.scss';
+
+.button {
+  border: 0;
+  outline: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: $borderRadius;
+  font-weight: $fontWeightSemiBold;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.primaryButton {
+  background-color: $primaryColor;
+  color: $white;
+
+  &:hover {
+    background-color: darken($primaryColor, 8);
+  }
+}
+
+.secondaryButton {
+  background-color: $lightGray;
+  font-weight: $fontWeightRegular;
+  color: $darkGray;
+
+  &:hover {
+    background-color: darken($lightGray, 4);
+  }
+}
+
+.dangerButton {
+  background-color: transparent;
+  color: $red;
+
+  &:hover {
+    color: darken($red, 10);
+  }
+}
