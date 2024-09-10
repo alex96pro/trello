@@ -96,6 +96,7 @@ const Board = () => {
                         )}
                       </Draggable>
                     ))}
+                    {provided.placeholder}
                   </div>
                 )}
               </Droppable>
